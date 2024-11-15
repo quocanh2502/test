@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm bài kiểm tra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Làm bài kiểm tra</h1>
+    <div class="button-container">
+        <button onclick="startExamForAll('TTHCM')">Tư tưởng Hồ Chí Minh</button>
+        <button onclick="startExamForAll('TTNT')">Trí tuệ nhân tạo</button>
+    </div>
+
+    <div id="questions" class="question-container"></div>
+    <button id="submit-btn" onclick="submitExam()" style="display:none;">Nộp bài</button>
+    
+    <div id="result" class="result-container" style="display:none;">
+        <p id="score"></p>
+        <div id="details"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
